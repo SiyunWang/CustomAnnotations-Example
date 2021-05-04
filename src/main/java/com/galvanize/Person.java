@@ -19,6 +19,12 @@ public class Person {
 
     private String address;
 
+    public Person(String firstName, String lastName, String age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
     @Init
     private void initNames() {
         this.firstName = this.firstName.substring(0, 1).toUpperCase() + this.firstName.substring(1);
